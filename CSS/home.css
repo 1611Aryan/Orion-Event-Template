@@ -1,0 +1,48 @@
+#home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#home .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(6px);
+}
+
+#home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.3);
+}
+
+#home h1 {
+  font-size: clamp(4rem, 8vw, 7rem);
+  color: var(--homeHeading);
+  z-index: 2;
+  width: min-content;
+  line-height: 1;
+  text-align: center;
+}
+
+#home .cta {
+  z-index: 2;
+  padding: calc(var(--padding) / 4);
+  border-radius: 10px;
+  background: var(--homeBtnBg);
+
+  color: var(--homeBtnTxt);
+  font-size: 1.2rem;
+}

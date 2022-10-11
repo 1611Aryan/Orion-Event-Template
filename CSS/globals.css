@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --fontCursive: "Pacifico", cursive;
+  --fontSans: "Rubik", sans-serif;
+
+  --sections: 5;
+
+  --padding: clamp(1rem, 4vw, 4rem);
+
+  --shade1: #000;
+  --shade2: #351c59;
+
+  /*?Nav */
+  --navHeight: 12vh;
+  --navColor: #fff;
+
+  /*?Home */
+  --homeHeading: #fff;
+  --homeBtnBg: #ffd43b;
+  --homeBtnTxt: #000;
+
+  /*?About Event */
+  --aboutText: #fff;
+
+  /*?Prizes Event */
+  --shade3: #3e1c59;
+  --prizesHeading: #fff;
+  --cardBg: #0d0e29;
+
+  /*?Sponsors */
+  --numOfSponsors: 12;
+  --numOfRows: calc((var(--numOfSponsors) / 4) + 1);
+  --shade4: #07293e;
+  --sponsorsHeading: #fff;
+
+  /*?Contact */
+  --contactHeading: #fff;
+  --contactText: #fff;
+}
+
+body {
+  width: 100%;
+  height: calc(var(--sections) * 100vh);
+  background: #000;
+  overflow: hidden auto;
+  font-family: var(--fontSans);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+li {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+:is(a, li):hover {
+  transform: scale(1.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontCursive);
+}
